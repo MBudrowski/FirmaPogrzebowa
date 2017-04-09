@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory name="SessionFactory">
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/pogrzebowka?useUnicode=true&amp;characterEncoding=utf-8</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">mbud.hibernate.util.CustomDialect</property>
+        <property name="hibernate.connection.CharSet">utf8</property>
+        <property name="hibernate.connection.characterEncoding">utf8</property>
+        <property name="hibernate.connection.useUnicode">true</property>
+        <property name="show_sql">false</property>
+        
+        <mapping class="mbud.hibernate.mapping.Klient" />
+        <mapping class="mbud.hibernate.mapping.Cmentarz" />
+        <mapping class="mbud.hibernate.mapping.DomPogrzebowy" />
+        <mapping class="mbud.hibernate.mapping.Kosciol" />
+        <mapping class="mbud.hibernate.mapping.Pogrzeb" />
+        <mapping class="mbud.hibernate.mapping.Pracownik" />
+        <mapping class="mbud.hibernate.mapping.Produkt" />
+        <mapping class="mbud.hibernate.mapping.Trumna" />
+        <mapping class="mbud.hibernate.mapping.Wieniec" />
+        <mapping class="mbud.hibernate.mapping.Zamowienie" />
+        <mapping class="mbud.hibernate.mapping.ZamowienieProdukt" />
+        <mapping class="mbud.hibernate.mapping.Znicz" />
+    </session-factory>
+</hibernate-configuration>

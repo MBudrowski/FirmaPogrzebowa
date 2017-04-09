@@ -1,0 +1,316 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2016-11-12, 18:09:52
+    Author     : Maciek
+*/
+body {
+	width: 1200px;
+	margin: auto;
+	margin-top: 30px;
+	background-color: #161616;
+	display: flex;
+	flex-flow: row wrap;
+	border: 3px double #333333;
+	font-family: Verdana, Arial, Helvetica;
+	color: #ffffff;
+	-webkit-box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.75);
+	box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	
+}
+
+a:visited {
+	
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(60, 60, 60, 0),
+		rgba(60, 60, 60, 1), rgba(60, 60, 60, 0));
+}
+
+header.pageHeader {
+	flex: 1 100%;
+	height: 350px;
+	border-bottom: 1px solid #333333;
+	background-color: #000000;
+	background-image: url("../img/logo.png");
+	background-size: 100% 100%;
+}
+
+header.panelHeader {
+	flex: 1 100%;
+	height: 200px;
+	border-bottom: 1px solid #333333;
+	background-color: #000000;
+	background-size: 100% 100%;
+}
+
+h1.headerTitle {
+	margin: 80px 20px 20px 60px;
+	font-size: 36px;
+	font-weight: bold;
+}
+
+h1.panelHeaderTitle {
+	margin: 40px 20px 20px 60px;
+	font-size: 36px;
+	font-weight: bold;
+}
+
+h2.headerDesc {
+	margin: 0px 20px 40px 60px;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+nav.pageMenu {
+	background-color: #111111;
+	width: 250px;
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 24px;
+	font-weight: bold;
+	order: 1;
+}
+
+.loggedAs {
+	text-align: center;
+	font-size: 16px;
+	font-weight: normal;
+	word-wrap: break-word;
+	margin-bottom: 20px;
+}
+
+.menuTitle {
+	text-align: center;
+	font-size: 20px;
+	font-weight: normal;
+	word-wrap: break-word;
+	margin: 10px;
+	margin-top: 20px;
+}
+
+li.navMenu {
+	list-style-type: none;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+ul.navElement {
+	margin: 5px auto 0 auto;
+	padding: 0;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.navElement {
+    position: relative;
+	width: 220px;
+	text-align: left;
+	font-size: 16px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	font-weight: normal;
+	font-style: normal;
+	word-wrap: break-word;
+	background: #111111;
+	background: -moz-linear-gradient(top, #161616 0%, #000000 100%);
+	background: -webkit-linear-gradient(top, #161616 0%, #000000 100%);
+	background: -o-linear-gradient(top, #161616 0%, #000000 100%);
+	border-left: 1px solid #444;
+	border-top: 1px solid #444;
+	border-right: 1px solid #444;
+	border-bottom: 1px solid #444;
+	transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+
+.navElement:hover {
+	background: #222222;
+}
+
+.navElement a {
+	display: block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+section.pageContent {
+	background-color: #222222;
+	width: 950px;
+	order: 2;
+	padding: 40px;
+	border-left: 1px solid #333333;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+section.pageContent a {
+	text-decoration: underline;
+}
+
+header.articleHeader {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 12px;
+}
+
+.articleInfo {
+	margin: 0;
+	margin-bottom: 12px;
+	font-size: 12px;
+	font-style: italic;
+}
+
+.articleInfo a {
+	color: red;
+}
+
+.articleContent {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 16px;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.articleFooter {
+	margin-top: 15px;
+}
+
+article.contentArticle {
+	padding-bottom: 20px;
+}
+
+article.contentArticle img {
+	width: 150px;
+	height: auto;
+	float: left;
+	margin-right: 12px;
+	margin-bottom: 12px;
+}
+
+footer.pageFooter {
+	background-color: #111111;
+	width: 100%;
+	order: 3;
+	text-align: center;
+	border-top: 1px solid #333333;
+	font-size: 14px;
+	padding: 10px;
+}
+
+.dropdown {
+	
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+	left: 220px;
+    min-width: 120px;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #111111;
+    border: 1px solid #333333;
+}
+
+.dropdown:hover .dropdown-content {
+    display: inherit;
+}
+
+.products {
+	width: 100%;
+}
+
+.orders {
+	width: 100%;
+}
+
+.orders tr {
+	outline: #bbbbbb 1px solid;
+}
+
+.orderBorderLeft {
+	border-left: 1px solid #bbbbbb;
+
+	padding: 5px;	
+}
+
+.products tr {
+	outline: #bbbbbb 1px solid;
+}
+
+.productInfo {
+	border-left: 1px solid #bbbbbb;
+
+	padding: 5px;	
+}
+
+.productInfo p {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.totalPrice {
+	text-align: right;
+	padding: 5px;	
+}
+
+.coffinImg {
+	width: 300px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.candleImg {
+	width: 300px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.wreathImg {
+	width: 300px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.productImg {
+	width: 150px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.addToCart {
+	width: 1%;
+	white-space: nowrap;
+	border-left: 1px solid #bbbbbb;
+}
+
+.errorMsg {
+	color: red;	
+}
